@@ -52,26 +52,22 @@ class EtudiantResponse(BaseModel):
 
 
 class Departement(BaseModel):
-    id: Optional[PyObjectId] = Field(alias="_id", default=None)
+    id: Optional[str] = Field(None, alias="_id")
     nom: str
     description: str
     responsable: str
     email: str
     telephone: str
-    nombre_etudiants: int  # Changé de str à int
+    nombre_etudiants: int
     date_creation: str
     batiment: str
-    active: bool  # Changé de str à bool
-    formations_ids: List[PyObjectId] = []
+    active: bool
+    formations_ids: List[str] = []
 
-    @field_validator('nombre_etudiants', 'active', mode='before')
-    def convert_types(cls, v):
-        if isinstance(v, str):
-            if v.isdigit():  # Pour nombre_etudiants
-                return int(v)
-            elif v.lower() in ['true', 'false']:  # Pour active
-                return v.lower() == 'true'
-        return v
+    model_config = ConfigDict(
+        arbitrary_types_allowed=True,
+        json_encoders={ObjectId: str}
+    )
 
     @field_validator('formations_ids', mode='before')
     def parse_formations_ids(cls, v):
