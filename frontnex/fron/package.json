@@ -1,22 +1,3 @@
-{
-  "name": "fron",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "fron": "file:",
-    "js-cookie": "^3.0.5",
-    "next": "15.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d72ae49615ee88e14e75adc64f50c0e4f465fdad722e58ea35a031718fa75df2
+size 415

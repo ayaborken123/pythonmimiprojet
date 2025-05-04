@@ -1,22 +1,38 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation"; // Ajout important
 
 export default function EtudiantsPage() {
   const [etudiants, setEtudiants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const router = useRouter(); // Nécessaire pour la redirection
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000/etudiants");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+        const response = await fetch("http://localhost:8000/etudiants", {
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${localStorage.getItem('access_token')}`
+          }
+        });
+
+        // Gestion des réponses non autorisées
+        if (response.status === 401) {
+          localStorage.removeItem('access_token');
+          router.push('/auth/login');
+          return;
         }
+
+        if (!response.ok) {
+          throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+        }
+
         const data = await response.json();
         setEtudiants(data);
       } catch (err) {
-        console.error("Fetch error:", err);
+        console.error("Erreur de récupération:", err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -24,7 +40,8 @@ export default function EtudiantsPage() {
     };
 
     fetchData();
-  }, []);
+  }, [router]);
+  
 
   if (loading) return <p>Chargement...</p>;
   if (error) return <p>Erreur: {error}</p>;
@@ -57,11 +74,12 @@ export default function EtudiantsPage() {
               {/* Formations */}
               <div>
                 <strong>Formations:</strong>
-                <ul className="list-disc pl-5">
-                  {etudiant.formations_inscrites?.map((formation, index) => (
-                    <li key={index}>{formation}</li>
-                  ))}
-                </ul>
+                <ul className="list-disc pl-6">
+  {etudiant.formations_inscrites?.map((formation, index) => (
+    <li key={index}>{formation}</li>
+  ))}
+</ul>
+
               </div>
               
               {/* URL de la photo */}

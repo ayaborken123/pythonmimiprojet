@@ -6,26 +6,34 @@ export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       const res = await fetch('http://localhost:8000/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
-      
-      if (!res.ok) throw new Error('Identifiants incorrects');
-      
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.detail || "Erreur de connexion");
+      }
+
       const data = await res.json();
-      localStorage.setItem('session_token', data.session_token);
+      localStorage.setItem('access_token', data.access_token);
       localStorage.setItem('user_id', data.user_id);
       
-      router.push('/account');
+      // Forcer le rechargement pour actualiser l'état d'authentification
+      window.location.href = '/account/profile';
     } catch (err) {
       setError(err.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -52,9 +60,12 @@ export default function LoginPage() {
         />
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+          disabled={isLoading}
+          className={`w-full bg-blue-500 text-white py-2 rounded ${
+            isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'
+          }`}
         >
-          Se connecter
+          {isLoading ? 'Chargement...' : 'Se connecter'}
         </button>
       </form>
     </div>

@@ -23,9 +23,12 @@ export default function RegisterPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
-      
-      if (!res.ok) throw new Error(await res.text());
-      
+  
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.detail || "Erreur d'inscription");
+      }
+  
       router.push('/auth/login');
     } catch (err) {
       setError(err.message);

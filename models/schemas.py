@@ -1,8 +1,8 @@
+from datetime import datetime
 from bson import ObjectId
-from pydantic import BaseModel, Field, ConfigDict, field_validator
+from pydantic import BaseModel, Field, ConfigDict, field_validator 
 from typing import Optional, List
 from pydantic_core import core_schema
-import json
 
 class PyObjectId(str):
     @classmethod
@@ -20,23 +20,36 @@ class PyObjectId(str):
         return str(v)
 
 class Etudiant(BaseModel):
-    id: Optional[str] = Field(alias="_id", default=None)
     nom: str
     prenom: str
-    age: int
     email: str
+    age: int
     departement_id: str
-    formations_inscrites: List[str]
-    photo_url: Optional[str] = None
+    formations_inscrites: List[str] = []
+    password: str
 
-    @field_validator('formations_inscrites', mode='before')
-    def parse_formations(cls, v):
-        if isinstance(v, str):
-            try:
-                return json.loads(v.replace("'", '"'))
-            except json.JSONDecodeError:
-                return v.split(',')
-        return v
+    model_config = ConfigDict(
+        populate_by_name=True,
+        arbitrary_types_allowed=True,
+        json_encoders={ObjectId: str}
+    )
+
+class EtudiantResponse(BaseModel):
+    id: Optional[str]
+    nom: str
+    prenom: str
+    email: str
+    departement_id: Optional[str]
+    formations_inscrites: List[str] = []
+    password: str
+
+    # ❌ Supprime ou corrige ce décorateur (le champ n'existe pas)
+    # @field_validator("date_inscription", mode="before")
+    # def convert_date(cls, value):
+    #     return value.strftime("%Y-%m-%d")
+
+
+
 
 class Departement(BaseModel):
     id: Optional[PyObjectId] = Field(alias="_id", default=None)
