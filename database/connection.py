@@ -1,7 +1,9 @@
 from motor.motor_asyncio import AsyncIOMotorClient
+import os
 
 uri = "mongodb+srv://Password123:Password123@cluster0.zlgyd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
 client = AsyncIOMotorClient(uri)
 db = client["etudiants_db"]
 

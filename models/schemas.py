@@ -3,6 +3,11 @@ from bson import ObjectId
 from pydantic import BaseModel, Field, ConfigDict, field_validator 
 from typing import Optional, List
 from pydantic_core import core_schema
+from .database import Base  # ✅ Import depuis database.py
+from sqlalchemy import Column, Integer, String, Float, Boolean
+from sqlalchemy.schema import CreateSchema
+from .database import Base
+from sqlalchemy.ext.declarative import declarative_base  # ✅
 
 class PyObjectId(str):
     @classmethod
@@ -86,3 +91,27 @@ class Formation(BaseModel):
         arbitrary_types_allowed=True,
         json_encoders={ObjectId: str}
     )
+    # Crée le schéma public s'il n'existe pas (optionnel)
+
+# Modèle SQLAlchemy
+# Modèle SQLAlchemy
+class RecommendedBook(Base):  # Utilisez Base de database.py
+    __tablename__ = "recommended_books"
+    __table_args__ = {"schema": "public"}
+    
+    id = Column(Integer, primary_key=True)
+    title = Column(String)
+    price = Column(Float)
+    category = Column(String)
+    availability = Column(Boolean)
+
+# Modèle Pydantic
+class RecommendedBookPydantic(BaseModel):
+    id: Optional[int]
+    title: str
+    price: float
+    category: str
+    availability: bool
+
+    class Config:
+        from_attributes = True

@@ -4,9 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from routes.auth import router as auth_router
 from database.connection import db  # <-- Ajouter cette ligne
 from routes.etudiants import router as etudiants_router
-
-
+from routes import recommendations, books  # ✅ Import correct
 app = FastAPI()
+app = FastAPI(debug=True)  # <-- Activer le mode debug
 
 # Inclusion des routers
 app.include_router(etudiants.router, prefix="/etudiants", tags=["Etudiants"])
@@ -14,6 +14,9 @@ app.include_router(departements.router, prefix="/departements", tags=["Departeme
 app.include_router(formations.router, prefix="/formations", tags=["Formations"])
 app.include_router(auth_router)
 app.include_router(etudiants_router)
+app.include_router(recommendations.router, prefix="/api")
+app.include_router(books.router, prefix="/api")
+
 
 # Configurer CORS
 app.add_middleware(
