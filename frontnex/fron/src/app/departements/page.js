@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import "../styles/globals.css";
 
 export default function DepartementsPage() {
   const [departements, setDepartements] = useState([])

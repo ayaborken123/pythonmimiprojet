@@ -1,16 +1,13 @@
-from fastapi import APIRouter, Depends,HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 import requests
 from bs4 import BeautifulSoup
 from sqlalchemy.orm import Session
 
 from models.schemas import RecommendedBook
-from models.database import get_db  # ✅ Import correct
-router = APIRouter()
-from fastapi import Depends  # <-- Ajoutez cette ligne
-from sqlalchemy.orm import Session  # <-- Si non déjà présent
+from models.database import get_db
 
 router = APIRouter()
-# Scraping des livres
+
 @router.get("/scrape-books")
 async def scrape_books(db: Session = Depends(get_db)):
     try:
@@ -24,14 +21,21 @@ async def scrape_books(db: Session = Depends(get_db)):
         for book in soup.select('article.product_pod'):
             title = book.h3.a['title']
             price = float(book.select_one('p.price_color').text.replace('£', ''))
-            category = book.select_one('p.instock.availability').text.strip()
-            
+
+            # Texte de disponibilité : 'In stock' ou autre
+            availability_text = book.select_one('p.instock.availability').text.strip()
+            availability = "In stock" in availability_text
+
+            # La catégorie n'est pas sur cette page — on met une valeur par défaut
+            category = "Inconnu"
+
             db.add(RecommendedBook(
                 title=title,
                 price=price,
                 category=category,
-                availability=True
+                availability=availability
             ))
+
             count += 1
         
         db.commit()
@@ -42,7 +46,6 @@ async def scrape_books(db: Session = Depends(get_db)):
 
 @router.get("/books/summary")
 async def get_book_summary(book_title: str):
-    # Exemple de résumé statique
     return {
         "summary": f"Résumé générique pour {book_title}. Ce livre explore des thèmes captivants."
     }

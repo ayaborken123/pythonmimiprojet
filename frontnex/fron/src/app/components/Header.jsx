@@ -10,6 +10,8 @@ export default function Header() {
           <Link href="/etudiants" className="hover:underline">Étudiants</Link>
           <Link href="/departements" className="hover:underline">Départements</Link>
           <Link href="/formations" className="hover:underline">Formations</Link>
+          <Link href="/books" className="hover:underline">Livres</Link>
+
         </div>
         <div className="flex space-x-4">
           <Link href="/auth/login" className="hover:underline">Se connecter</Link>
