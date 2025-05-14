@@ -1,82 +1,63 @@
-'use client';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+"use client";
+import { useEffect, useState } from "react";
 
 export default function ProfilePage() {
-  const router = useRouter();
-  const [etudiant, setEtudiant] = useState(null);
-  const [error, setError] = useState(null); // Déclaration de setError
-  const [isLoading, setIsLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const token = localStorage.getItem('access_token');
-      const userId = localStorage.getItem('user_id');
-  
-      if (!token || !userId) {
-        console.error("Aucun ID utilisateur trouvé !");
-        router.push('/auth/login');
-        return;
-      }
-  
+    const fetchProfile = async () => {
+      const token = localStorage.getItem("access_token");
+      if (!token) return;
+
       try {
-        const response = await fetch(`http://127.0.0.1:8000/etudiants/${userId}`, {
+        const res = await fetch("http://localhost:8000/auth/me", {
           headers: {
             Authorization: `Bearer ${token}`,
-            'Content-Type': 'application/json'
-          }
+          },
         });
-  
-        if (!response.ok) {
-          const errorData = await response.json();
-          setError(errorData.detail || 'Erreur de chargement');
-          return; 
+
+        if (!res.ok) {
+          throw new Error("Erreur lors de la récupération du profil");
         }
-  
-        const data = await response.json();
-        setEtudiant(data);
-  
+
+        const data = await res.json();
+        setUser(data);
       } catch (err) {
-        console.error('Erreur:', err);
-        setError(err.message);
+        console.error(err);
       } finally {
-        setIsLoading(false);
+        setLoading(false);
       }
     };
-  
-    fetchData();
-  }, [router]);
-  
-  
 
-  if (isLoading) {
-    return (
-      <div className="p-4">
-        <p>Chargement du profil...</p>
-      </div>
-    );
-  }
+    fetchProfile();
+  }, []);
+
+  if (loading) return <p>Chargement...</p>;
+
+  if (!user) return <p>Aucun utilisateur connecté</p>;
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Profil utilisateur</h1>
-      {etudiant ? (
-        <div className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4">Informations personnelles</h2>
-          <p className="mb-2">Email: {etudiant.email}</p>
-          <p className="mb-2">Âge: {etudiant.age}</p>
-          <p className="mb-2">Département: {etudiant?.departement?.nom || 'Non spécifié'}</p>
-          <h3 className="text-lg font-semibold mt-4">Formations suivies:</h3>
-          <ul className="list-disc pl-6">
-  {etudiant.formations_inscrites?.map((formation, index) => (
-    <li key={index}>{formation}</li>
-  ))}
-</ul>
+    <div className="max-w-xl mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">📌 Informations personnelles</h1>
+      <p>✉️ <strong>Email :</strong> {user.email}</p>
+      <p>🎂 <strong>Âge :</strong> {user.age}</p>
+      <p>🏢 <strong>Département :</strong> {user.departement_id || "Non spécifié"}</p>
 
-        </div>
+      <h2 className="mt-6 text-xl font-semibold">🎓 Formations inscrites</h2>
+      {user.formations_inscrites?.length > 0 ? (
+        <ul className="list-disc pl-5">
+          {user.formations_inscrites.map((f, index) => (
+            <li key={index}>{f}</li>
+          ))}
+        </ul>
       ) : (
-        <p>Aucune donnée disponible</p>
+        <p>Aucune formation inscrite.</p>
       )}
+
+      <h2 className="mt-6 text-xl font-semibold">⭐ Formations favorites</h2>
+      {/* Ajoute si tu gères les favoris plus tard */}
+      <p>Aucune formation favorite.</p>
     </div>
   );
 }

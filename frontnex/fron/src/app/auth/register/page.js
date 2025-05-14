@@ -1,127 +1,42 @@
+// src/app/auth/register/page.jsx
 "use client";
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+import React, { useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
-export default function RegisterPage() {
-  const [form, setForm] = useState({
-    nom: '',
-    prenom: '',
-    email: '',
-    password: '',
-    age: 18,
-    departement_id: ''
-  });
-  const [error, setError] = useState('');
+const Register = () => {
   const router = useRouter();
+  const [formData, setFormData] = useState({
+    nom: "", prenom: "", email: "", password: "", age: "", departement_id: "",
+  });
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
     try {
-      const res = await fetch('http://localhost:8000/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-  
-      if (!res.ok) {
-        const errorData = await res.json();
-        throw new Error(errorData.detail || "Erreur d'inscription");
-      }
-  
-      router.push('/auth/login');
+      await axios.post("http://localhost:8000/auth/register", formData);
+      router.push("/auth/login");  // Rediriger vers la page de connexion après inscription
     } catch (err) {
-      setError(err.message);
+      setError("Erreur lors de l'inscription");
     }
   };
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
-      <h1 className="text-2xl font-bold mb-6">Inscription</h1>
-      {error && <p className="text-red-500 mb-4">{error}</p>}
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label className="block mb-1">Nom</label>
-            <input
-              name="nom"
-              value={form.nom}
-              onChange={handleChange}
-              className="w-full p-2 border rounded"
-              required
-            />
-          </div>
-          <div>
-            <label className="block mb-1">Prénom</label>
-            <input
-              name="prenom"
-              value={form.prenom}
-              onChange={handleChange}
-              className="w-full p-2 border rounded"
-              required
-            />
-          </div>
-        </div>
-        <div>
-          <label className="block mb-1">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-        <div>
-          <label className="block mb-1">Mot de passe</label>
-          <input
-            type="password"
-            name="password"
-            value={form.password}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-        <div>
-          <label className="block mb-1">Âge</label>
-          <input
-            type="number"
-            name="age"
-            value={form.age}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-        <div>
-          <label className="block mb-1">ID Département</label>
-          <input
-            name="departement_id"
-            value={form.departement_id}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
-        >
-          S'inscrire
-        </button>
+    <div>
+      <h2>Inscription</h2>
+      {error && <p style={{ color: "red" }}>{error}</p>}
+      <form onSubmit={handleSubmit}>
+        <input name="nom" placeholder="Nom" onChange={(e) => setFormData({ ...formData, nom: e.target.value })} required />
+        <input name="prenom" placeholder="Prénom" onChange={(e) => setFormData({ ...formData, prenom: e.target.value })} required />
+        <input name="email" placeholder="Email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
+        <input name="password" type="password" placeholder="Mot de passe" onChange={(e) => setFormData({ ...formData, password: e.target.value })} required />
+        <input name="age" type="number" placeholder="Âge" onChange={(e) => setFormData({ ...formData, age: e.target.value })} required />
+        <input name="departement_id" placeholder="ID Département" onChange={(e) => setFormData({ ...formData, departement_id: e.target.value })} required />
+        <button type="submit">S'inscrire</button>
       </form>
-      <p className="mt-4 text-center">
-        Déjà un compte ?{' '}
-        <Link href="/auth/login" className="text-blue-600 hover:underline">
-          Se connecter
-        </Link>
-      </p>
     </div>
   );
-}
+};
+
+export default Register;

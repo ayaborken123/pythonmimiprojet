@@ -1,6 +1,6 @@
-from datetime import datetime
-from bson import ObjectId
-from pydantic import BaseModel, Field, ConfigDict, field_validator 
+from datetime import datetime 
+from bson import ObjectId #Type MongoDB pour les identifiants uniques
+from pydantic import BaseModel, Field, ConfigDict, field_validator #lasse de base pour les modèles Pydantic
 from typing import Optional, List
 from pydantic_core import core_schema
 from .database import Base  # ✅ Import depuis database.py
@@ -9,7 +9,7 @@ from sqlalchemy.schema import CreateSchema
 from .database import Base
 from sqlalchemy.ext.declarative import declarative_base  # ✅
 
-class PyObjectId(str):
+class PyObjectId(str): #Valider les ObjectId MongoDB dans les modèles Pydantic
     @classmethod
     def __get_pydantic_core_schema__(cls, _source_type, _handler):
         return core_schema.no_info_after_validator_function(
@@ -96,10 +96,10 @@ class Formation(BaseModel):
 # Modèle SQLAlchemy
 # Modèle SQLAlchemy
 class RecommendedBook(Base):  # Utilisez Base de database.py
-    __tablename__ = "recommended_books"
-    __table_args__ = {"schema": "public"}
+    __tablename__ = "recommended_books" # Nom de la table
+    __table_args__ = {"schema": "public"} # Nom du schéma (optionnel)
     
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True) # Identifiant de la table
     title = Column(String)
     price = Column(Float)
     category = Column(String)

@@ -5,6 +5,7 @@ from database.connection import etudiants_collection, sessions_collection
 from datetime import datetime, timedelta
 import bcrypt
 import secrets
+from bson import ObjectId
 
 router = APIRouter()
 
@@ -53,12 +54,24 @@ async def login(form_data: UserLogin):
     # Vérifier le mot de passe
     if not user or not bcrypt.checkpw(form_data.password.encode(), user["password"].encode()):
         raise HTTPException(status_code=401, detail="Identifiants invalides")
-    
+
+    # Vérifier s'il a déjà une session active
+    existing_session = await sessions_collection.find_one({
+        "user_id": str(user["_id"]),
+        "expires": {"$gt": datetime.now()}
+    })
+    if existing_session:
+        return {
+            "access_token": existing_session["token"],
+            "token_type": "bearer",
+            "user_id": str(user["_id"])
+        }
+
     # Générer un token de session
     token = secrets.token_urlsafe(32)
     expires = datetime.now() + timedelta(hours=24)
     
-    # Stocker la session
+    # Stocker la nouvelle session
     await sessions_collection.insert_one({
         "user_id": str(user["_id"]),
         "token": token,
@@ -70,3 +83,26 @@ async def login(form_data: UserLogin):
         "token_type": "bearer",
         "user_id": str(user["_id"])
     }
+@router.post("/logout")
+async def logout(token: str = Depends(OAuth2PasswordBearer(tokenUrl="auth/login"))):
+    result = await sessions_collection.delete_one({"token": token})
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=400, detail="Session introuvable")
+    return {"message": "Déconnexion réussie"}
+
+@router.get("/me")
+async def get_me(token: str = Depends(OAuth2PasswordBearer(tokenUrl="auth/login"))):
+    session = await sessions_collection.find_one({"token": token})
+
+    if not session or session["expires"] < datetime.now():
+        raise HTTPException(status_code=401, detail="Session invalide ou expirée")
+    
+    user = await etudiants_collection.find_one({"_id": ObjectId(session["user_id"])})
+    if not user:
+        raise HTTPException(status_code=404, detail="Utilisateur non trouvé")
+    
+    user["id"] = str(user["_id"])
+    del user["_id"]
+    del user["password"]  # Ne pas renvoyer le mot de passe
+
+    return user

@@ -71,19 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-server-dom-webpack/server.edge */ "(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-webpack-server-edge.js");
-/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__.registerClientReference)(
-function() { throw new Error("Attempted to call the default export of \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component."); },
-"C:\\Users\\INFOSHOP\\Desktop\\pyt0\\frontnex\\fron\\src\\app\\auth\\login\\page.js",
-"default",
-));
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-server-dom-webpack/server.edge */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-webpack-server-edge.js\");\n/* harmony import */ var react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_server_dom_webpack_server_edge__WEBPACK_IMPORTED_MODULE_0__.registerClientReference)(\nfunction() { throw new Error(\"Attempted to call the default export of \\\"C:\\\\\\\\Users\\\\\\\\INFOSHOP\\\\\\\\Desktop\\\\\\\\pyt0\\\\\\\\frontnex\\\\\\\\fron\\\\\\\\src\\\\\\\\app\\\\\\\\auth\\\\\\\\login\\\\\\\\page.js\\\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.\"); },\n\"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n\"default\",\n));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2F1dGgvbG9naW4vcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBOEIiLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcSU5GT1NIT1BcXERlc2t0b3BcXHB5dDBcXGZyb250bmV4XFxmcm9uXFxzcmNcXGFwcFxcYXV0aFxcbG9naW5cXHBhZ2UuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gc3JjL2FwcC9hdXRoL2xvZ2luL3BhZ2UuanN4XHJcblwidXNlIGNsaWVudFwiO1xyXG5pbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiO1xyXG5pbXBvcnQgeyB1c2VSb3V0ZXIgfSBmcm9tIFwibmV4dC9uYXZpZ2F0aW9uXCI7XHJcblxyXG5jb25zdCBMb2dpbiA9ICgpID0+IHtcclxuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcclxuICBjb25zdCBbZm9ybURhdGEsIHNldEZvcm1EYXRhXSA9IHVzZVN0YXRlKHsgZW1haWw6IFwiXCIsIHBhc3N3b3JkOiBcIlwiIH0pO1xyXG4gIGNvbnN0IFtlcnJvciwgc2V0RXJyb3JdID0gdXNlU3RhdGUoXCJcIik7XHJcblxyXG4gIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IGFzeW5jIChlKSA9PiB7XHJcbiAgICBlLnByZXZlbnREZWZhdWx0KCk7XHJcbiAgICBzZXRFcnJvcihcIlwiKTtcclxuICAgIHRyeSB7XHJcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MucG9zdChcImh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hdXRoL2xvZ2luXCIsIGZvcm1EYXRhKTtcclxuICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oXCJhdXRoVG9rZW5cIiwgcmVzcG9uc2UuZGF0YS5hY2Nlc3NfdG9rZW4pOyAgLy8gU2F1dmVnYXJkZXIgbGUgdG9rZW5cclxuICAgICAgcm91dGVyLnB1c2goXCIvXCIpOyAgLy8gUmVkaXJpZ2VyIHZlcnMgbGEgcGFnZSBkJ2FjY3VlaWwgb3UgcGFnZSBhcHLDqHMgY29ubmV4aW9uXHJcbiAgICB9IGNhdGNoIChlcnIpIHtcclxuICAgICAgc2V0RXJyb3IoXCJFcnJldXIgbG9ycyBkZSBsYSBjb25uZXhpb25cIik7XHJcbiAgICB9XHJcbiAgfTtcclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXY+XHJcbiAgICAgIDxoMj5Db25uZXhpb248L2gyPlxyXG4gICAgICB7ZXJyb3IgJiYgPHAgc3R5bGU9e3sgY29sb3I6IFwicmVkXCIgfX0+e2Vycm9yfTwvcD59XHJcbiAgICAgIDxmb3JtIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9PlxyXG4gICAgICAgIDxpbnB1dCBuYW1lPVwiZW1haWxcIiBwbGFjZWhvbGRlcj1cIkVtYWlsXCIgb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtRGF0YSh7IC4uLmZvcm1EYXRhLCBlbWFpbDogZS50YXJnZXQudmFsdWUgfSl9IHJlcXVpcmVkIC8+XHJcbiAgICAgICAgPGlucHV0IG5hbWU9XCJwYXNzd29yZFwiIHR5cGU9XCJwYXNzd29yZFwiIHBsYWNlaG9sZGVyPVwiTW90IGRlIHBhc3NlXCIgb25DaGFuZ2U9eyhlKSA9PiBzZXRGb3JtRGF0YSh7IC4uLmZvcm1EYXRhLCBwYXNzd29yZDogZS50YXJnZXQudmFsdWUgfSl9IHJlcXVpcmVkIC8+XHJcbiAgICAgICAgPGJ1dHRvbiB0eXBlPVwic3VibWl0XCI+U2UgY29ubmVjdGVyPC9idXR0b24+XHJcbiAgICAgIDwvZm9ybT5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBMb2dpbjtcclxuIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./src/app/auth/login/page.js\n");
 
 /***/ }),
 
@@ -169,7 +157,7 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__web
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ LoginPage)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/dist/api/navigation.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\nfunction LoginPage() {\n    const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [password, setPassword] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    const handleSubmit = async (e)=>{\n        e.preventDefault();\n        setIsLoading(true);\n        try {\n            const res = await fetch('http://localhost:8000/auth/login', {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json'\n                },\n                body: JSON.stringify({\n                    email,\n                    password\n                })\n            });\n            if (!res.ok) {\n                const errorData = await res.json();\n                throw new Error(errorData.detail || \"Erreur de connexion\");\n            }\n            const data = await res.json();\n            localStorage.setItem('access_token', data.access_token);\n            localStorage.setItem('user_id', data.user_id);\n            // Forcer le rechargement pour actualiser l'état d'authentification\n            window.location.href = '/account/profile';\n        } catch (err) {\n            setError(err.message);\n        } finally{\n            setIsLoading(false);\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"max-w-md mx-auto p-4\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                className: \"text-2xl font-bold mb-4\",\n                children: \"Connexion\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 42,\n                columnNumber: 7\n            }, this),\n            error && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                className: \"text-red-500 mb-2\",\n                children: error\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 43,\n                columnNumber: 17\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                onSubmit: handleSubmit,\n                className: \"space-y-4\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        type: \"email\",\n                        value: email,\n                        onChange: (e)=>setEmail(e.target.value),\n                        placeholder: \"Email\",\n                        className: \"w-full p-2 border rounded\",\n                        required: true\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 45,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        type: \"password\",\n                        value: password,\n                        onChange: (e)=>setPassword(e.target.value),\n                        placeholder: \"Mot de passe\",\n                        className: \"w-full p-2 border rounded\",\n                        required: true\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 53,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        type: \"submit\",\n                        disabled: isLoading,\n                        className: `w-full bg-blue-500 text-white py-2 rounded ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'}`,\n                        children: isLoading ? 'Chargement...' : 'Se connecter'\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 61,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 44,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n        lineNumber: 41,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2F1dGgvbG9naW4vcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQ2lDO0FBQ1c7QUFFN0IsU0FBU0U7SUFDdEIsTUFBTSxDQUFDQyxPQUFPQyxTQUFTLEdBQUdKLCtDQUFRQSxDQUFDO0lBQ25DLE1BQU0sQ0FBQ0ssVUFBVUMsWUFBWSxHQUFHTiwrQ0FBUUEsQ0FBQztJQUN6QyxNQUFNLENBQUNPLE9BQU9DLFNBQVMsR0FBR1IsK0NBQVFBLENBQUM7SUFDbkMsTUFBTSxDQUFDUyxXQUFXQyxhQUFhLEdBQUdWLCtDQUFRQSxDQUFDO0lBQzNDLE1BQU1XLFNBQVNWLDBEQUFTQTtJQUV4QixNQUFNVyxlQUFlLE9BQU9DO1FBQzFCQSxFQUFFQyxjQUFjO1FBQ2hCSixhQUFhO1FBQ2IsSUFBSTtZQUNGLE1BQU1LLE1BQU0sTUFBTUMsTUFBTSxvQ0FBb0M7Z0JBQzFEQyxRQUFRO2dCQUNSQyxTQUFTO29CQUFFLGdCQUFnQjtnQkFBbUI7Z0JBQzlDQyxNQUFNQyxLQUFLQyxTQUFTLENBQUM7b0JBQUVsQjtvQkFBT0U7Z0JBQVM7WUFDekM7WUFFQSxJQUFJLENBQUNVLElBQUlPLEVBQUUsRUFBRTtnQkFDWCxNQUFNQyxZQUFZLE1BQU1SLElBQUlTLElBQUk7Z0JBQ2hDLE1BQU0sSUFBSUMsTUFBTUYsVUFBVUcsTUFBTSxJQUFJO1lBQ3RDO1lBRUEsTUFBTUMsT0FBTyxNQUFNWixJQUFJUyxJQUFJO1lBQzNCSSxhQUFhQyxPQUFPLENBQUMsZ0JBQWdCRixLQUFLRyxZQUFZO1lBQ3RERixhQUFhQyxPQUFPLENBQUMsV0FBV0YsS0FBS0ksT0FBTztZQUU1QyxtRUFBbUU7WUFDbkVDLE9BQU9DLFFBQVEsQ0FBQ0MsSUFBSSxHQUFHO1FBQ3pCLEVBQUUsT0FBT0MsS0FBSztZQUNaM0IsU0FBUzJCLElBQUlDLE9BQU87UUFDdEIsU0FBVTtZQUNSMUIsYUFBYTtRQUNmO0lBQ0Y7SUFFQSxxQkFDRSw4REFBQzJCO1FBQUlDLFdBQVU7OzBCQUNiLDhEQUFDQztnQkFBR0QsV0FBVTswQkFBMEI7Ozs7OztZQUN2Qy9CLHVCQUFTLDhEQUFDaUM7Z0JBQUVGLFdBQVU7MEJBQXFCL0I7Ozs7OzswQkFDNUMsOERBQUNrQztnQkFBS0MsVUFBVTlCO2dCQUFjMEIsV0FBVTs7a0NBQ3RDLDhEQUFDSzt3QkFDQ0MsTUFBSzt3QkFDTEMsT0FBTzFDO3dCQUNQMkMsVUFBVSxDQUFDakMsSUFBTVQsU0FBU1MsRUFBRWtDLE1BQU0sQ0FBQ0YsS0FBSzt3QkFDeENHLGFBQVk7d0JBQ1pWLFdBQVU7d0JBQ1ZXLFFBQVE7Ozs7OztrQ0FFViw4REFBQ047d0JBQ0NDLE1BQUs7d0JBQ0xDLE9BQU94Qzt3QkFDUHlDLFVBQVUsQ0FBQ2pDLElBQU1QLFlBQVlPLEVBQUVrQyxNQUFNLENBQUNGLEtBQUs7d0JBQzNDRyxhQUFZO3dCQUNaVixXQUFVO3dCQUNWVyxRQUFROzs7Ozs7a0NBRVYsOERBQUNDO3dCQUNDTixNQUFLO3dCQUNMTyxVQUFVMUM7d0JBQ1Y2QixXQUFXLENBQUMsMkNBQTJDLEVBQ3JEN0IsWUFBWSxrQ0FBa0MscUJBQzlDO2tDQUVEQSxZQUFZLGtCQUFrQjs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBS3pDIiwic291cmNlcyI6WyJDOlxcVXNlcnNcXElORk9TSE9QXFxEZXNrdG9wXFxweXQwXFxmcm9udG5leFxcZnJvblxcc3JjXFxhcHBcXGF1dGhcXGxvZ2luXFxwYWdlLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIlwidXNlIGNsaWVudFwiO1xyXG5pbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9uYXZpZ2F0aW9uJztcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIExvZ2luUGFnZSgpIHtcclxuICBjb25zdCBbZW1haWwsIHNldEVtYWlsXSA9IHVzZVN0YXRlKCcnKTtcclxuICBjb25zdCBbcGFzc3dvcmQsIHNldFBhc3N3b3JkXSA9IHVzZVN0YXRlKCcnKTtcclxuICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKCcnKTtcclxuICBjb25zdCBbaXNMb2FkaW5nLCBzZXRJc0xvYWRpbmddID0gdXNlU3RhdGUoZmFsc2UpO1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG5cclxuICBjb25zdCBoYW5kbGVTdWJtaXQgPSBhc3luYyAoZSkgPT4ge1xyXG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgc2V0SXNMb2FkaW5nKHRydWUpO1xyXG4gICAgdHJ5IHtcclxuICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goJ2h0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hdXRoL2xvZ2luJywge1xyXG4gICAgICAgIG1ldGhvZDogJ1BPU1QnLFxyXG4gICAgICAgIGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LFxyXG4gICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgZW1haWwsIHBhc3N3b3JkIH0pLFxyXG4gICAgICB9KTtcclxuXHJcbiAgICAgIGlmICghcmVzLm9rKSB7XHJcbiAgICAgICAgY29uc3QgZXJyb3JEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcclxuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoZXJyb3JEYXRhLmRldGFpbCB8fCBcIkVycmV1ciBkZSBjb25uZXhpb25cIik7XHJcbiAgICAgIH1cclxuXHJcbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xyXG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnYWNjZXNzX3Rva2VuJywgZGF0YS5hY2Nlc3NfdG9rZW4pO1xyXG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgndXNlcl9pZCcsIGRhdGEudXNlcl9pZCk7XHJcbiAgICAgIFxyXG4gICAgICAvLyBGb3JjZXIgbGUgcmVjaGFyZ2VtZW50IHBvdXIgYWN0dWFsaXNlciBsJ8OpdGF0IGQnYXV0aGVudGlmaWNhdGlvblxyXG4gICAgICB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICcvYWNjb3VudC9wcm9maWxlJztcclxuICAgIH0gY2F0Y2ggKGVycikge1xyXG4gICAgICBzZXRFcnJvcihlcnIubWVzc2FnZSk7XHJcbiAgICB9IGZpbmFsbHkge1xyXG4gICAgICBzZXRJc0xvYWRpbmcoZmFsc2UpO1xyXG4gICAgfVxyXG4gIH07XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cIm1heC13LW1kIG14LWF1dG8gcC00XCI+XHJcbiAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTJ4bCBmb250LWJvbGQgbWItNFwiPkNvbm5leGlvbjwvaDE+XHJcbiAgICAgIHtlcnJvciAmJiA8cCBjbGFzc05hbWU9XCJ0ZXh0LXJlZC01MDAgbWItMlwiPntlcnJvcn08L3A+fVxyXG4gICAgICA8Zm9ybSBvblN1Ym1pdD17aGFuZGxlU3VibWl0fSBjbGFzc05hbWU9XCJzcGFjZS15LTRcIj5cclxuICAgICAgICA8aW5wdXRcclxuICAgICAgICAgIHR5cGU9XCJlbWFpbFwiXHJcbiAgICAgICAgICB2YWx1ZT17ZW1haWx9XHJcbiAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldEVtYWlsKGUudGFyZ2V0LnZhbHVlKX1cclxuICAgICAgICAgIHBsYWNlaG9sZGVyPVwiRW1haWxcIlxyXG4gICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHAtMiBib3JkZXIgcm91bmRlZFwiXHJcbiAgICAgICAgICByZXF1aXJlZFxyXG4gICAgICAgIC8+XHJcbiAgICAgICAgPGlucHV0XHJcbiAgICAgICAgICB0eXBlPVwicGFzc3dvcmRcIlxyXG4gICAgICAgICAgdmFsdWU9e3Bhc3N3b3JkfVxyXG4gICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRQYXNzd29yZChlLnRhcmdldC52YWx1ZSl9XHJcbiAgICAgICAgICBwbGFjZWhvbGRlcj1cIk1vdCBkZSBwYXNzZVwiXHJcbiAgICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcC0yIGJvcmRlciByb3VuZGVkXCJcclxuICAgICAgICAgIHJlcXVpcmVkXHJcbiAgICAgICAgLz5cclxuICAgICAgICA8YnV0dG9uXHJcbiAgICAgICAgICB0eXBlPVwic3VibWl0XCJcclxuICAgICAgICAgIGRpc2FibGVkPXtpc0xvYWRpbmd9XHJcbiAgICAgICAgICBjbGFzc05hbWU9e2B3LWZ1bGwgYmctYmx1ZS01MDAgdGV4dC13aGl0ZSBweS0yIHJvdW5kZWQgJHtcclxuICAgICAgICAgICAgaXNMb2FkaW5nID8gJ29wYWNpdHktNTAgY3Vyc29yLW5vdC1hbGxvd2VkJyA6ICdob3ZlcjpiZy1ibHVlLTYwMCdcclxuICAgICAgICAgIH1gfVxyXG4gICAgICAgID5cclxuICAgICAgICAgIHtpc0xvYWRpbmcgPyAnQ2hhcmdlbWVudC4uLicgOiAnU2UgY29ubmVjdGVyJ31cclxuICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgPC9mb3JtPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufSJdLCJuYW1lcyI6WyJ1c2VTdGF0ZSIsInVzZVJvdXRlciIsIkxvZ2luUGFnZSIsImVtYWlsIiwic2V0RW1haWwiLCJwYXNzd29yZCIsInNldFBhc3N3b3JkIiwiZXJyb3IiLCJzZXRFcnJvciIsImlzTG9hZGluZyIsInNldElzTG9hZGluZyIsInJvdXRlciIsImhhbmRsZVN1Ym1pdCIsImUiLCJwcmV2ZW50RGVmYXVsdCIsInJlcyIsImZldGNoIiwibWV0aG9kIiwiaGVhZGVycyIsImJvZHkiLCJKU09OIiwic3RyaW5naWZ5Iiwib2siLCJlcnJvckRhdGEiLCJqc29uIiwiRXJyb3IiLCJkZXRhaWwiLCJkYXRhIiwibG9jYWxTdG9yYWdlIiwic2V0SXRlbSIsImFjY2Vzc190b2tlbiIsInVzZXJfaWQiLCJ3aW5kb3ciLCJsb2NhdGlvbiIsImhyZWYiLCJlcnIiLCJtZXNzYWdlIiwiZGl2IiwiY2xhc3NOYW1lIiwiaDEiLCJwIiwiZm9ybSIsIm9uU3VibWl0IiwiaW5wdXQiLCJ0eXBlIiwidmFsdWUiLCJvbkNoYW5nZSIsInRhcmdldCIsInBsYWNlaG9sZGVyIiwicmVxdWlyZWQiLCJidXR0b24iLCJkaXNhYmxlZCJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./src/app/auth/login/page.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/dist/api/navigation.js\");\n// src/app/auth/login/page.jsx\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nconst Login = ()=>{\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    const [formData, setFormData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({\n        email: \"\",\n        password: \"\"\n    });\n    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const handleSubmit = async (e)=>{\n        e.preventDefault();\n        setError(\"\");\n        try {\n            const response = await axios__WEBPACK_IMPORTED_MODULE_3__[\"default\"].post(\"http://localhost:8000/auth/login\", formData);\n            localStorage.setItem(\"authToken\", response.data.access_token); // Sauvegarder le token\n            router.push(\"/\"); // Rediriger vers la page d'accueil ou page après connexion\n        } catch (err) {\n            setError(\"Erreur lors de la connexion\");\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                children: \"Connexion\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 26,\n                columnNumber: 7\n            }, undefined),\n            error && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                style: {\n                    color: \"red\"\n                },\n                children: error\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 27,\n                columnNumber: 17\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                onSubmit: handleSubmit,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        name: \"email\",\n                        placeholder: \"Email\",\n                        onChange: (e)=>setFormData({\n                                ...formData,\n                                email: e.target.value\n                            }),\n                        required: true\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 29,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        name: \"password\",\n                        type: \"password\",\n                        placeholder: \"Mot de passe\",\n                        onChange: (e)=>setFormData({\n                                ...formData,\n                                password: e.target.value\n                            }),\n                        required: true\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 30,\n                        columnNumber: 9\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        type: \"submit\",\n                        children: \"Se connecter\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                        lineNumber: 31,\n                        columnNumber: 9\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n                lineNumber: 28,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\INFOSHOP\\\\Desktop\\\\pyt0\\\\frontnex\\\\fron\\\\src\\\\app\\\\auth\\\\login\\\\page.js\",\n        lineNumber: 25,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Login);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL2F1dGgvbG9naW4vcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEsOEJBQThCOztBQUVVO0FBQ2Q7QUFDa0I7QUFFNUMsTUFBTUksUUFBUTtJQUNaLE1BQU1DLFNBQVNGLDBEQUFTQTtJQUN4QixNQUFNLENBQUNHLFVBQVVDLFlBQVksR0FBR04sK0NBQVFBLENBQUM7UUFBRU8sT0FBTztRQUFJQyxVQUFVO0lBQUc7SUFDbkUsTUFBTSxDQUFDQyxPQUFPQyxTQUFTLEdBQUdWLCtDQUFRQSxDQUFDO0lBRW5DLE1BQU1XLGVBQWUsT0FBT0M7UUFDMUJBLEVBQUVDLGNBQWM7UUFDaEJILFNBQVM7UUFDVCxJQUFJO1lBQ0YsTUFBTUksV0FBVyxNQUFNYiw2Q0FBS0EsQ0FBQ2MsSUFBSSxDQUFDLG9DQUFvQ1Y7WUFDdEVXLGFBQWFDLE9BQU8sQ0FBQyxhQUFhSCxTQUFTSSxJQUFJLENBQUNDLFlBQVksR0FBSSx1QkFBdUI7WUFDdkZmLE9BQU9nQixJQUFJLENBQUMsTUFBTywyREFBMkQ7UUFDaEYsRUFBRSxPQUFPQyxLQUFLO1lBQ1pYLFNBQVM7UUFDWDtJQUNGO0lBRUEscUJBQ0UsOERBQUNZOzswQkFDQyw4REFBQ0M7MEJBQUc7Ozs7OztZQUNIZCx1QkFBUyw4REFBQ2U7Z0JBQUVDLE9BQU87b0JBQUVDLE9BQU87Z0JBQU07MEJBQUlqQjs7Ozs7OzBCQUN2Qyw4REFBQ2tCO2dCQUFLQyxVQUFVakI7O2tDQUNkLDhEQUFDa0I7d0JBQU1DLE1BQUs7d0JBQVFDLGFBQVk7d0JBQVFDLFVBQVUsQ0FBQ3BCLElBQU1OLFlBQVk7Z0NBQUUsR0FBR0QsUUFBUTtnQ0FBRUUsT0FBT0ssRUFBRXFCLE1BQU0sQ0FBQ0MsS0FBSzs0QkFBQzt3QkFBSUMsUUFBUTs7Ozs7O2tDQUN0SCw4REFBQ047d0JBQU1DLE1BQUs7d0JBQVdNLE1BQUs7d0JBQVdMLGFBQVk7d0JBQWVDLFVBQVUsQ0FBQ3BCLElBQU1OLFlBQVk7Z0NBQUUsR0FBR0QsUUFBUTtnQ0FBRUcsVUFBVUksRUFBRXFCLE1BQU0sQ0FBQ0MsS0FBSzs0QkFBQzt3QkFBSUMsUUFBUTs7Ozs7O2tDQUNuSiw4REFBQ0U7d0JBQU9ELE1BQUs7a0NBQVM7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUk5QjtBQUVBLGlFQUFlakMsS0FBS0EsRUFBQyIsInNvdXJjZXMiOlsiQzpcXFVzZXJzXFxJTkZPU0hPUFxcRGVza3RvcFxccHl0MFxcZnJvbnRuZXhcXGZyb25cXHNyY1xcYXBwXFxhdXRoXFxsb2dpblxccGFnZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBzcmMvYXBwL2F1dGgvbG9naW4vcGFnZS5qc3hcclxuXCJ1c2UgY2xpZW50XCI7XHJcbmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSB9IGZyb20gXCJyZWFjdFwiO1xyXG5pbXBvcnQgYXhpb3MgZnJvbSBcImF4aW9zXCI7XHJcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gXCJuZXh0L25hdmlnYXRpb25cIjtcclxuXHJcbmNvbnN0IExvZ2luID0gKCkgPT4ge1xyXG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xyXG4gIGNvbnN0IFtmb3JtRGF0YSwgc2V0Rm9ybURhdGFdID0gdXNlU3RhdGUoeyBlbWFpbDogXCJcIiwgcGFzc3dvcmQ6IFwiXCIgfSk7XHJcbiAgY29uc3QgW2Vycm9yLCBzZXRFcnJvcl0gPSB1c2VTdGF0ZShcIlwiKTtcclxuXHJcbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gYXN5bmMgKGUpID0+IHtcclxuICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgIHNldEVycm9yKFwiXCIpO1xyXG4gICAgdHJ5IHtcclxuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBheGlvcy5wb3N0KFwiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2F1dGgvbG9naW5cIiwgZm9ybURhdGEpO1xyXG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShcImF1dGhUb2tlblwiLCByZXNwb25zZS5kYXRhLmFjY2Vzc190b2tlbik7ICAvLyBTYXV2ZWdhcmRlciBsZSB0b2tlblxyXG4gICAgICByb3V0ZXIucHVzaChcIi9cIik7ICAvLyBSZWRpcmlnZXIgdmVycyBsYSBwYWdlIGQnYWNjdWVpbCBvdSBwYWdlIGFwcsOocyBjb25uZXhpb25cclxuICAgIH0gY2F0Y2ggKGVycikge1xyXG4gICAgICBzZXRFcnJvcihcIkVycmV1ciBsb3JzIGRlIGxhIGNvbm5leGlvblwiKTtcclxuICAgIH1cclxuICB9O1xyXG5cclxuICByZXR1cm4gKFxyXG4gICAgPGRpdj5cclxuICAgICAgPGgyPkNvbm5leGlvbjwvaDI+XHJcbiAgICAgIHtlcnJvciAmJiA8cCBzdHlsZT17eyBjb2xvcjogXCJyZWRcIiB9fT57ZXJyb3J9PC9wPn1cclxuICAgICAgPGZvcm0gb25TdWJtaXQ9e2hhbmRsZVN1Ym1pdH0+XHJcbiAgICAgICAgPGlucHV0IG5hbWU9XCJlbWFpbFwiIHBsYWNlaG9sZGVyPVwiRW1haWxcIiBvbkNoYW5nZT17KGUpID0+IHNldEZvcm1EYXRhKHsgLi4uZm9ybURhdGEsIGVtYWlsOiBlLnRhcmdldC52YWx1ZSB9KX0gcmVxdWlyZWQgLz5cclxuICAgICAgICA8aW5wdXQgbmFtZT1cInBhc3N3b3JkXCIgdHlwZT1cInBhc3N3b3JkXCIgcGxhY2Vob2xkZXI9XCJNb3QgZGUgcGFzc2VcIiBvbkNoYW5nZT17KGUpID0+IHNldEZvcm1EYXRhKHsgLi4uZm9ybURhdGEsIHBhc3N3b3JkOiBlLnRhcmdldC52YWx1ZSB9KX0gcmVxdWlyZWQgLz5cclxuICAgICAgICA8YnV0dG9uIHR5cGU9XCJzdWJtaXRcIj5TZSBjb25uZWN0ZXI8L2J1dHRvbj5cclxuICAgICAgPC9mb3JtPlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IExvZ2luO1xyXG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsImF4aW9zIiwidXNlUm91dGVyIiwiTG9naW4iLCJyb3V0ZXIiLCJmb3JtRGF0YSIsInNldEZvcm1EYXRhIiwiZW1haWwiLCJwYXNzd29yZCIsImVycm9yIiwic2V0RXJyb3IiLCJoYW5kbGVTdWJtaXQiLCJlIiwicHJldmVudERlZmF1bHQiLCJyZXNwb25zZSIsInBvc3QiLCJsb2NhbFN0b3JhZ2UiLCJzZXRJdGVtIiwiZGF0YSIsImFjY2Vzc190b2tlbiIsInB1c2giLCJlcnIiLCJkaXYiLCJoMiIsInAiLCJzdHlsZSIsImNvbG9yIiwiZm9ybSIsIm9uU3VibWl0IiwiaW5wdXQiLCJuYW1lIiwicGxhY2Vob2xkZXIiLCJvbkNoYW5nZSIsInRhcmdldCIsInZhbHVlIiwicmVxdWlyZWQiLCJ0eXBlIiwiYnV0dG9uIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/auth/login/page.js\n");
 
 /***/ }),
 
@@ -228,6 +216,82 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "?4c03":
+/*!***********************!*\
+  !*** debug (ignored) ***!
+  \***********************/
+/***/ (() => {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
 /***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
 /*!*************************************************************************!*\
   !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
@@ -250,6 +314,17 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -258,6 +333,28 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ })
 
@@ -268,7 +365,7 @@ module.exports = require("url");
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fauth%2Flogin%2Fpage&page=%2Fauth%2Flogin%2Fpage&appPaths=%2Fauth%2Flogin%2Fpage&pagePath=private-next-app-dir%2Fauth%2Flogin%2Fpage.js&appDir=C%3A%5CUsers%5CINFOSHOP%5CDesktop%5Cpyt0%5Cfrontnex%5Cfron%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CINFOSHOP%5CDesktop%5Cpyt0%5Cfrontnex%5Cfron&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/mime-db","vendor-chunks/axios","vendor-chunks/follow-redirects","vendor-chunks/get-intrinsic","vendor-chunks/form-data","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/has-symbols","vendor-chunks/delayed-stream","vendor-chunks/function-bind","vendor-chunks/es-set-tostringtag","vendor-chunks/get-proto","vendor-chunks/call-bind-apply-helpers","vendor-chunks/dunder-proto","vendor-chunks/math-intrinsics","vendor-chunks/es-errors","vendor-chunks/gopd","vendor-chunks/es-define-property","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/es-object-atoms"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fauth%2Flogin%2Fpage&page=%2Fauth%2Flogin%2Fpage&appPaths=%2Fauth%2Flogin%2Fpage&pagePath=private-next-app-dir%2Fauth%2Flogin%2Fpage.js&appDir=C%3A%5CUsers%5CINFOSHOP%5CDesktop%5Cpyt0%5Cfrontnex%5Cfron%5Csrc%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CINFOSHOP%5CDesktop%5Cpyt0%5Cfrontnex%5Cfron&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
